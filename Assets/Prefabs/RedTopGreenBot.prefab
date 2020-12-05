@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4967574051310195597}
   - component: {fileID: 4967574051310195596}
+  - component: {fileID: 121521758256333828}
   m_Layer: 0
   m_Name: RedGift
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4967574051310195599}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 3.163738, y: 3.6921802, z: 38.002808}
+  m_LocalPosition: {x: 0, y: 3.6921802, z: 38.002808}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 247351919586283215}
@@ -82,6 +83,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &121521758256333828
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4967574051310195599}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.031791598, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.2, y: 6.4}
+    newSize: {x: 3.2, y: 3.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6740334, y: 6.4}
+  m_EdgeRadius: 0
 --- !u!1 &4967574051487489281
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4967574051487489287}
   - component: {fileID: 4967574051487489286}
+  - component: {fileID: 1438978651259395530}
   m_Layer: 0
   m_Name: greengift
   m_TagString: Untagged
@@ -107,7 +135,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4967574051487489281}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.313738, y: -4.4678197, z: 38.002808}
+  m_LocalPosition: {x: 0, y: -4.4678197, z: 38.002808}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 247351919586283215}
@@ -164,6 +192,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1438978651259395530
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4967574051487489281}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04768613, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.2, y: 6.4}
+    newSize: {x: 3.2, y: 3.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7058253, y: 6.4}
+  m_EdgeRadius: 0
 --- !u!1 &7957292315878740659
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 247351919586283215}
+  - component: {fileID: 938294894404240249}
   m_Layer: 0
   m_Name: RedTopGreenBot
   m_TagString: Untagged
@@ -188,7 +243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7957292315878740659}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.623738, y: 5.0878196, z: -38.002808}
+  m_LocalPosition: {x: 0, y: 5.0878196, z: -38.002808}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4967574051487489287}
@@ -196,3 +251,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &938294894404240249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7957292315878740659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 736f4214bb278f042a8dbc433c9e905c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
