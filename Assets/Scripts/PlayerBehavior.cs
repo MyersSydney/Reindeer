@@ -20,6 +20,10 @@ public class PlayerBehavior : MonoBehaviour
             Debug.Log("You Get Coal!");
             GameObject.Destroy(collision.gameObject);
             manager.EndRound();
+        } else if (collision.collider.CompareTag("GameController"))
+        {
+            Debug.Log("Out of Bounds!");
+            manager.EndRound();
         }
     }
     // Update is called once per frame
