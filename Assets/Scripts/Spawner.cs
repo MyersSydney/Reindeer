@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         GameObject newPipe = Instantiate(pipe[UnityEngine.Random.Range(0, 11)]);
-        newPipe.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
+        newPipe.transform.position = transform.position + new Vector3(10, Random.Range(-height, height), 0);
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class Spawner : MonoBehaviour
       if(timer > maxTimer)
         {
             GameObject newPipe = Instantiate(pipe[UnityEngine.Random.Range(0, 11)]);
-            newPipe.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
+            newPipe.transform.position = transform.position + new Vector3(10, Random.Range(-height, height), 0);
             Destroy(newPipe, 15);
             timer = 0;
         }
