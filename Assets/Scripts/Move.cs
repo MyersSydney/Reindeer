@@ -14,6 +14,11 @@ public class Move : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         start = transform.position;
     }
+
+    public void Reset()
+    {
+        start = transform.position;
+    }
     private void Update()
     {
         dist = Vector3.Distance(start, transform.position);

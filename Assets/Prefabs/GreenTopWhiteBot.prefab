@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 8720745002975220407}
   m_Layer: 8
   m_Name: greengift (2)
-  m_TagString: Untagged
+  m_TagString: Gift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
