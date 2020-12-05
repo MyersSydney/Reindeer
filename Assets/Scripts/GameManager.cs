@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         if (playerDist > bestDist)
             bestDist = playerDist;
         // Purge all pillars
-        Debug.Log("Clearing Pillars...");
+       //Debug.Log("Clearing Pillars...");
         GameObject[] gifts = GameObject.FindGameObjectsWithTag("Gift");
         foreach(GameObject g in gifts)
         {

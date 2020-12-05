@@ -597,7 +597,7 @@ GameObject:
   - component: {fileID: 767005272}
   m_Layer: 1
   m_Name: TopCollider
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1399,10 +1399,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1936243572}
   - component: {fileID: 1936243571}
-  - component: {fileID: 1936243573}
   m_Layer: 1
   m_Name: BotCollider
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1417,7 +1416,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0.98523176, y: 0}
@@ -1447,18 +1446,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1936243573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936243570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aa7dd76ec15eeb41aa079a72bc0b858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2024841143
 GameObject:
   m_ObjectHideFlags: 0
