@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
+    Move move;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +15,5 @@ public class GameOver : MonoBehaviour
     void Update()
     {
         
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-       
     }
 }

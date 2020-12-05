@@ -17,7 +17,8 @@ public class Move : MonoBehaviour
 
     public void Reset()
     {
-        start = transform.position;
+        // start = transform.position;
+        velocity = -1;
     }
     private void Update()
     {

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Gift
+  - counter
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - 
   - 
   - gift
-  - 
-  - 
+  - Player
+  - counter
   - 
   - 
   - 

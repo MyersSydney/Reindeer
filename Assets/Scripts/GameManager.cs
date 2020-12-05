@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,16 +9,45 @@ public class GameManager : MonoBehaviour
     public Move playerMove;
     public int pretime;
     public bool isPlaying = false;
-    
-    
+    public GameObject gameOver;
+    public PlayerBehavior player;
+    public Text giftCount;
+    public GameObject inGameUI;
+
+    //player prefs
+    public int topScore;
+    public Text topScoreUI;
+    public Text finalScoreUI;
+
+    public static GameManager instance;
     // Start is called before the first frame update
     void Awake()
     {
         sceneTime -= pretime;
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 
+    public void Start()
+    {
+        StartGame();
+        gameOver.SetActive(false);
+        inGameUI.SetActive(true);
+        topScore = PlayerPrefs.GetInt("TopScore");
+    }
     public void EndRound()
     {
+        if(topScore < player.giftCounter)
+        {
+            PlayerPrefs.SetInt("TopScore", player.giftCounter);
+            Debug.Log(PlayerPrefs.GetInt("TopScore"));
+        }
         Debug.Log("Round Ended!");
         isPlaying = false;
         playerMove.Reset();
@@ -27,10 +57,20 @@ public class GameManager : MonoBehaviour
         // Purge all pillars
        //Debug.Log("Clearing Pillars...");
         GameObject[] gifts = GameObject.FindGameObjectsWithTag("Gift");
-        foreach(GameObject g in gifts)
+        Time.timeScale = 0;
+        foreach (GameObject g in gifts)
         {
-            GameObject.Destroy(g);
+           // GameObject.Destroy(g);
+           
+
         }
+
+        //game over ui enable
+        gameOver.SetActive(true);
+        inGameUI.SetActive(false);
+        topScoreUI.text = PlayerPrefs.GetInt("TopScore").ToString();
+        finalScoreUI.text = player.giftCounter.ToString();
+
     }
 
     public void StartRound()
@@ -38,6 +78,10 @@ public class GameManager : MonoBehaviour
         Debug.Log("Round Started!");
         isPlaying = true;
         playerDist = 0;
+        Time.timeScale = 1;
+
+        //game over ui
+       
     }
     void StartGame()
     {
@@ -52,7 +96,10 @@ public class GameManager : MonoBehaviour
     {
         playerDist = playerMove.dist; // grab the travel dist from the palyer move script (it tracks there)
         sceneTime += Time.deltaTime;
-        if (sceneTime >= 0 && isPlaying == false)
-            StartGame();
+        /* if (sceneTime >= 0 && isPlaying == false)
+             StartGame();*/
+
+        giftCount.text = player.giftCounter.ToString();
+
     }
 }
