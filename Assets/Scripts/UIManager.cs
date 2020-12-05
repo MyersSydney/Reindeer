@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     public Text distDisplay;
     public GameObject GameOverUI;
-  
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -28,5 +29,15 @@ public class UIManager : MonoBehaviour
     public void quit()
     {
         Application.Quit();
+    }
+    
+    public void loadGameScene()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+    public void LoadTitleScene()
+    {
+        SceneManager.LoadScene("Start");
+        Time.timeScale = 1;
     }
 }
