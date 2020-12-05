@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        
         player = GameObject.Find("Player");
         sceneTime -= pretime;
     }
@@ -23,7 +24,7 @@ public class GameManager : MonoBehaviour
         //Function starts the match!
         Debug.Log("!   Game Start  !");
         isPlaying = true;
-
+        Physics2D.IgnoreLayerCollision(1, 8, true);
     }
     // Update is called once per frame
     void Update()

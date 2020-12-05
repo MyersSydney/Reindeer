@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1874857294325356779}
   - component: {fileID: 3520612079082208255}
   - component: {fileID: 1794649042886265547}
-  m_Layer: 0
+  - component: {fileID: 3185834726503295340}
+  m_Layer: 8
   m_Name: WhiteGift
-  m_TagString: Untagged
+  m_TagString: Gift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,6 +110,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6445351, y: 6.4}
   m_EdgeRadius: 0
+--- !u!50 &3185834726503295340
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789338208617770377}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!1 &2646047344852388550
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,9 +141,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7456325763979880804}
   - component: {fileID: 6828687881587486197}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedTopWhiteBot
-  m_TagString: Untagged
+  m_TagString: Gift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,9 +188,10 @@ GameObject:
   - component: {fileID: 2617459110481914183}
   - component: {fileID: 7665026622103463921}
   - component: {fileID: 1511667902130028775}
-  m_Layer: 0
+  - component: {fileID: 5097979896396930162}
+  m_Layer: 8
   m_Name: RedGift
-  m_TagString: Untagged
+  m_TagString: Gift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,3 +287,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6762792, y: 6.4}
   m_EdgeRadius: 0
+--- !u!50 &5097979896396930162
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5889213431142546933}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6

@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8209643175623375768}
   - component: {fileID: 8584735796823991949}
   - component: {fileID: 6746879656798781497}
-  m_Layer: 0
+  - component: {fileID: 2438648890258531390}
+  m_Layer: 8
   m_Name: RedGift
-  m_TagString: Untagged
+  m_TagString: Gift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,6 +110,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7282875, y: 6.4}
   m_EdgeRadius: 0
+--- !u!50 &2438648890258531390
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593106275289593165}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!1 &6031050239421210409
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,9 +142,10 @@ GameObject:
   - component: {fileID: 2285261733108567010}
   - component: {fileID: 8867252556805309031}
   - component: {fileID: 8304105493384646493}
-  m_Layer: 0
+  - component: {fileID: 298637775941601012}
+  m_Layer: 8
   m_Name: greengift
-  m_TagString: Untagged
+  m_TagString: Gift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,6 +241,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.632308, y: 6.4}
   m_EdgeRadius: 0
+--- !u!50 &298637775941601012
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031050239421210409}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!1 &6989032486877568853
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,9 +272,9 @@ GameObject:
   m_Component:
   - component: {fileID: 393986587523552866}
   - component: {fileID: 5341662394810902752}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GreenTopRedBot
-  m_TagString: Untagged
+  m_TagString: Gift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

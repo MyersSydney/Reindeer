@@ -57,9 +57,10 @@ GameObject:
   - component: {fileID: 5149396692425433119}
   - component: {fileID: 1442127810513661600}
   - component: {fileID: 5691969707944853995}
-  m_Layer: 0
+  - component: {fileID: 9091465185513961543}
+  m_Layer: 8
   m_Name: RedGift
-  m_TagString: Untagged
+  m_TagString: Gift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,6 +156,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6786728, y: 6.4}
   m_EdgeRadius: 0
+--- !u!50 &9091465185513961543
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4300814192293565964}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!1 &4448506356495758619
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,9 +188,10 @@ GameObject:
   - component: {fileID: 6796970107820066614}
   - component: {fileID: 5103751584504711466}
   - component: {fileID: 3382224329744205682}
-  m_Layer: 0
+  - component: {fileID: 8979080794177128958}
+  m_Layer: 8
   m_Name: BlueGift (1)
-  m_TagString: Untagged
+  m_TagString: Gift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,3 +287,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6463037, y: 6.5}
   m_EdgeRadius: 0
+--- !u!50 &8979080794177128958
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4448506356495758619}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6

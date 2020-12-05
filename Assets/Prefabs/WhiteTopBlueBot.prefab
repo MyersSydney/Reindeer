@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2398641244706344234}
   - component: {fileID: 2398641244706344213}
   - component: {fileID: 4169165053690647697}
-  m_Layer: 0
+  - component: {fileID: 4743536520839090623}
+  m_Layer: 8
   m_Name: BlueGift
-  m_TagString: Untagged
+  m_TagString: Gift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,6 +110,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6348219, y: 6.5}
   m_EdgeRadius: 0
+--- !u!50 &4743536520839090623
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2398641244706344212}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!1 &2398641244739611792
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,9 +142,10 @@ GameObject:
   - component: {fileID: 2398641244739611798}
   - component: {fileID: 2398641244739611793}
   - component: {fileID: 6107994458909036153}
-  m_Layer: 0
+  - component: {fileID: 3459697491578323149}
+  m_Layer: 8
   m_Name: WhiteGift
-  m_TagString: Untagged
+  m_TagString: Gift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,6 +241,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6667644, y: 6.4}
   m_EdgeRadius: 0
+--- !u!50 &3459697491578323149
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2398641244739611792}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!1 &3117840384161025380
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +274,7 @@ GameObject:
   - component: {fileID: 828468348951456398}
   m_Layer: 0
   m_Name: WhiteTopBlueBot
-  m_TagString: Untagged
+  m_TagString: Gift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
